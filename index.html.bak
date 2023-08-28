@@ -12,6 +12,7 @@
 		
 		mail($mailTo,$subj,$txt,$header);
 		header("Location: index.php");
+		echo '<script>alert("mail sent");</script>';
 	}
 	
 ?>

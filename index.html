@@ -1,22 +1,3 @@
-<?php
-	if(isset($_POST["send"]))
-	{
-		$name=$_POST["name"];
-		$email=$_POST["email"];
-		$msg=$_POST["msg"];
-		$subj=$_POST["subj"];
-		
-		$mailTo="aungpaing95@gmail.com";
-		$header="From :".$email;
-		$txt="You have received email from :".$name.".\n\n".$msg;
-		
-		mail($mailTo,$subj,$txt,$header);
-		header("Location: index.php");
-		echo '<script>alert("mail sent");</script>';
-	}
-	
-?>
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -581,7 +562,7 @@
 
 		<div class="row no-gutters block-9">
           <div class="col-md-6 order-md-last d-flex">
-            <form method="post" class="bg-light p-4 p-md-5 contact-form right-border-radius">
+            <form action="http://formspree.io/aungpaing95@gmail.com" method="post" class="bg-light p-4 p-md-5 contact-form right-border-radius">
               <div class="form-group">
                 <input type="text" class="form-control" name="name" placeholder="Your Name">
               </div>
