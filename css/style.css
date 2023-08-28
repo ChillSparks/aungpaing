@@ -50,7 +50,12 @@ html {
 
 article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
   display: block; }
-
+.right-border-radius{
+	border-top-right-radius: 5px; border-bottom-right-radius: 5px; 
+}
+.left-border-radius{
+	border-top-left-radius: 5px; border-bottom-left-radius: 5px; 
+}
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
@@ -171,7 +176,8 @@ figure {
 
 img {
   vertical-align: middle;
-  border-style: none; }
+  border-style: none;
+  height:100%; }
 
 svg {
   overflow: hidden;
@@ -9418,9 +9424,7 @@ textarea.form-control {
 .contact-section .img {
   width: 100%;
   background-position: top center; }
-  @media (max-width: 991.98px) {
-    .contact-section .img {
-      height: 500px; } }
+
 
 .contact-section .contact-info p a {
   color: #fff; }

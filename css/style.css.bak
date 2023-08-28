@@ -50,7 +50,12 @@ html {
 
 article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
   display: block; }
-
+.right-border-radius{
+	border-top-right-radius: 5px; border-bottom-right-radius: 5px; 
+}
+.left-border-radius{
+	border-top-left-radius: 5px; border-bottom-left-radius: 5px; 
+}
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
@@ -79,7 +84,7 @@ h1, h2, h3, h4, h5, h6 {
 p {
   margin-top: 0;
   margin-bottom: 1rem; 
-  color:#fff;}
+  color:#fff; }
 
 abbr[title],
 abbr[data-original-title] {
@@ -171,7 +176,8 @@ figure {
 
 img {
   vertical-align: middle;
-  border-style: none; }
+  border-style: none;
+  height:100%; }
 
 svg {
   overflow: hidden;
